@@ -1,0 +1,56 @@
+\documentclass[paper=a4,10pt]{scrartcl}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+
+\usepackage{fancyref}
+
+\usepackage[numbers,square,sort]{natbib} %praktikumsquellenvorgabe
+\usepackage{amsmath}
+
+\usepackage{url}
+%\usepackage{hyperref}
+%\usepackage{multibib}
+\bibliographystyle{unsrt}
+
+
+\title{Supraleitung}
+\author{Ralf Hühn, Robert Kummer}
+\date{28. Mai 2018}
+
+\begin{document}
+\pagenumbering{gobble}
+\maketitle
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+%\newpage
+\tableofcontents
+\newpage
+
+\part{Hauptteil}
+\section{Aufgabenstellungen}
+
+\newpage
+\section{Grundlagen}
+
+\newpage
+\section{Auswertung und Diskussion}
+
+\newpage
+\section{Abstract}
+
+\newpage
+\section{Literatur- und Referenzverzeichnis}
+\renewcommand{\refname}{Literatur und Referenzen}
+\nocite{*}
+\bibliography{../bib}
+%\renewcommand{\refname}{Referenzbla}
+%\bibliography{referenz}
+\part{Anhang}
+\end{document}
